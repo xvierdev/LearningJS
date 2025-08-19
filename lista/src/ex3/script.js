@@ -1,9 +1,9 @@
 const CUSTO_COMBUSTIVEL = 5;
 
-let distancia = 10;
-let qtdPecas = 2000;
-let regiao = 1;
-let rastreamento = 'n';
+let distancia = Number(prompt('Distância em quilômetros'));
+let qtdPecas = Number(prompt('Quantidade de peças'));
+let regiao = Number(prompt('Região (1, 2 ou 3)'));
+let rastreamento = prompt('Rastreamento? (s/n)');
 
 function custoRegiao(regiao) {
     switch (regiao) {
@@ -58,3 +58,8 @@ console.log(`Optou por rastreamento "${rastreamento}"`)
 console.log(`Custo de combustível R$ ${combustivel.toFixed(2)}`);
 console.log(`Desconto a ser aplicado R$ ${desconto.toFixed(2)}`);
 console.log(`Preço final R$ ${total.toFixed(2)}`)
+
+document.body.innerHTML += `Taxa de rastreamento R$ ${valorRastreamento}<br>`
+document.body.innerHTML += `Valor do frete pelas peças R$ ${custoBruto}<br>`
+document.body.innerHTML += `Valor do frete por quilômetro R$ ${combustivel}<br>`
+document.body.innerHTML += `Total do frete <strong>R$ ${total}</strong><br>`
