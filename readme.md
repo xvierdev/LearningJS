@@ -1,4 +1,6 @@
 # Trabalho de Aprendizagem de Javascript n° 1
-## Professor Claudio
+## Professor Claudio Etelvino de Lima
 
-Progresso : 50 %
+:script: [Lista de exercícios de Javascript](docs/dados.pdf)
+
+Progresso : 100 %
