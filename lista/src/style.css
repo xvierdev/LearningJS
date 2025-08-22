@@ -1,0 +1,20 @@
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+main {
+    margin: 10%;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    margin-top: 10px;
+}
