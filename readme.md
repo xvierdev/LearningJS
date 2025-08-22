@@ -1,5 +1,7 @@
-# Trabalho de Aprendizagem de Javascript n° 1
-## Professor Claudio Etelvino de Lima
+# Atividade Avaliativa Individual 01
+### Fatec São José dos Campos - Análise e desenvolvimento de sistemas
+### Engenharia de Software II
+### Professor Claudio Etelvino de Lima
 
 📜 [Lista de exercícios de Javascript](docs/dados.pdf)
 
