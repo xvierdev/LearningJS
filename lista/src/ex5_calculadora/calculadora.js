@@ -11,10 +11,10 @@ result = calculo(Number(numero1), Number(numero2), operacao);
 alert(`O resultado é: ${result}`);
 
 if (operacao == 'soma') {
-    document.body.innerHTML += `soma (${numero1}, ${numero2}) = ${result}`;
+    document.body.innerHTML += `Soma <strong>(${numero1}, ${numero2}) = ${result}</strong>`;
 }
 else if (operacao == 'subtração') {
-    document.body.innerHTML += `subtração (${numero1}, ${numero2}) = ${result}`;
+    document.body.innerHTML += `Subtração <strong>(${numero1}, ${numero2}) = ${result}</strong>`;
 }
 
 

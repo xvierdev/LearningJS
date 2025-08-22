@@ -59,7 +59,7 @@ console.log(`Custo de combustível R$ ${combustivel.toFixed(2)}`);
 console.log(`Desconto a ser aplicado R$ ${desconto.toFixed(2)}`);
 console.log(`Preço final R$ ${total.toFixed(2)}`)
 
-document.body.innerHTML += `Taxa de rastreamento R$ ${valorRastreamento}<br>`
-document.body.innerHTML += `Valor do frete pelas peças R$ ${custoBruto}<br>`
-document.body.innerHTML += `Valor do frete por quilômetro R$ ${combustivel}<br>`
+document.body.innerHTML += `Taxa de rastreamento <strong>R$ ${valorRastreamento}</strong><br>`
+document.body.innerHTML += `Valor do frete pelas peças <strong>R$ ${custoBruto}</strong><br>`
+document.body.innerHTML += `Valor do frete por quilômetro <strong>R$ ${combustivel}</strong><br>`
 document.body.innerHTML += `Total do frete <strong>R$ ${total}</strong><br>`

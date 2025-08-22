@@ -19,32 +19,34 @@ while (true) {
 
 const valorAltura = parseFloat(altura) / 100;
 const valorPeso = parseFloat(peso);
-const imc = valorPeso / (valorAltura ** 2)
+const imc = valorPeso / (valorAltura ** 2);
+let classificado;
+
+if (imc < 16) {
+    classificado = 'Baixo peso muito grave!';
+}
+else if (imc < 17) {
+    classificado  = 'Baixo peso grave!';
+}
+else if (imc < 18.5) {
+    classificado  = 'Baixo peso!';
+}
+else if (imc < 25) {
+    classificado  = 'Peso normal!';
+}
+else if (imc < 30) {
+    classificado  = 'Sobrepeso!';
+}
+else if (imc < 35) {
+    classificado  = 'Obesidade grau I!';
+}
+else if (imc < 40) {
+    classificado  = 'Obesidade grau II!';
+}
+else {
+    classificado  = 'Obesidade grau III';
+}
 
 document.body.innerHTML += `<strong>${nome}</strong> `;
 document.body.innerHTML += `possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong> `;
-document.body.innerHTML += 'sendo classificado como: ';
-if (imc < 16) {
-    document.body.innerHTML += 'Baixo peso muito grave!';
-}
-else if (imc < 17) {
-    document.body.innerHTML += 'Baixo peso grave!';
-}
-else if (imc < 18.5) {
-    document.body.innerHTML += 'Baixo peso!';
-}
-else if (imc < 25) {
-    document.body.innerHTML += 'Peso normal!';
-}
-else if (imc < 30) {
-    document.body.innerHTML += 'Sobrepeso!';
-}
-else if (imc < 35) {
-    document.body.innerHTML += 'Obesidade grau I!';
-}
-else if (imc < 40) {
-    document.body.innerHTML += 'Obesidade grau II!';
-}
-else {
-    document.body.innerHTML += 'Obesidade grau III';
-}
+document.body.innerHTML += `sendo classificado como: <strong>${classificado}</strong>.`;

@@ -8,15 +8,22 @@ Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”.
 */
 
 let idade = parseInt(prompt('Digite a sua idade'));
-if (idade > 0 && idade < 15){
-    alert('Criança');
+let result;
+if (idade > 0 && idade < 15) {
+    result = 'Criança';
+    alert(result);
 }
-else if (idade < 30){
-    alert('Jovem');
+else if (idade < 30) {
+    result = 'Jovem';
+    alert(result);
 }
-else if (idade < 60){
-    alert('Adulto');
+else if (idade < 60) {
+    result = 'Adulto';
+    alert(result);
 }
-else{
-    alert('Idoso')
+else {
+    result = 'Idoso';
+    alert(result);
 }
+
+document.body.innerHTML += `A idade <strong>${idade}</strong> está na faixa etária <strong>${result}</strong>.`;

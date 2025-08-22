@@ -50,5 +50,5 @@ switch (mes) {
 
 const datafinal = `${dia} de ${mesText} de ${ano}`;
 alert(datafinal);
-document.body.innerHTML = `<strong>${datafinal}</strong>`;
+document.body.innerHTML += `<strong>${datafinal}</strong>`;
 console.log(datafinal);
